@@ -1,0 +1,174 @@
+.img1
+{
+	width:300px;
+	height: 300px; 
+}
+.label1,.label2,.label3
+{
+	height: 8px;
+	width:8px;
+	display: block;
+	border-radius: 50%;
+	background-color: lightgray;
+}
+
+.grid
+{
+	
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr; 
+}
+.container
+{
+width: 300px;
+height: 300px;
+}
+.container input
+{
+	display:none; 
+}
+
+
+.item-a
+{
+grid-column:1/ -1;
+grid-row:1/-1 
+
+
+}
+i
+{
+	color: white;
+}
+.item-b
+{
+	grid-column: 1/2;
+	grid-row:2/3; 
+	z-index: 5;
+	align-self: center;
+}
+.item-c
+{
+	grid-column: 3/4;
+	grid-row:2/3;
+	z-index: 5; 
+	justify-self:end;
+	align-self: center;
+
+}
+.labels
+{
+	display: grid;
+	grid-template-columns: min-content min-content min-content;
+	column-gap: 10px;
+	grid-column: 3/4;
+	grid-row: 3/4;
+	align-self:center;
+	justify-self:center;
+}
+.tab1,.tab2,.tab3
+{
+	display: none;
+}
+
+
+
+
+
+#check-p1:checked ~ .tab3
+{
+	display: grid;
+}
+#check-n1:checked ~ .tab2
+{
+	display: grid;
+}
+#check-p2:checked ~ .tab1
+{
+	display: grid;
+}
+#check-n2:checked ~ .tab3
+{
+	display: grid;
+}
+#check-p3:checked ~ .tab2
+{
+	display: grid;
+}
+#check-n3:checked ~ .tab1
+{
+	display: grid;
+}
+
+
+#check-p1:checked ~  .grid .labels .label3
+{
+	background-color: blue;
+}
+#check-n1:checked ~ .grid .labels .label2
+{
+	background-color: blue;
+}
+#check-p2:checked ~ .grid .labels .label1
+{
+	background-color: blue;
+}
+#check-n2:checked ~ .grid .labels .label3
+{
+	background-color: blue;
+}
+#check-p3:checked ~ .grid .labels .label2
+{
+	background-color: blue;
+}
+#check-n3:checked ~ .grid .labels .label1
+{
+	background-color: blue;
+}
+.grid2
+{
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	grid-template-rows: auto auto;
+	column-gap: 8px;
+	grid-row-gap: 8px;
+}
+.primary .text1
+{
+	color: #3291a8;
+}
+.primary .bg
+{
+	background-color: lightgray;
+	padding: 5px;
+}
+.primary .bg2
+{
+
+background-color: #3291a8;
+padding: 5px;
+}
+.primary .text2
+{
+	color: white
+}
+.text3
+{
+	color: gray;
+}
+.f-s25
+{
+	font-size: 25px;
+}
+.primary a
+{
+	color: #3291a8;
+}
+a
+{
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: underline;
+}
